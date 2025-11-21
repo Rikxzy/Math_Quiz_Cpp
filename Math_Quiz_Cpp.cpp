@@ -201,6 +201,10 @@ void PlayMathGame()
 
 	GenerateQuizzQuestions(GameQuizz);
 	AskAndCorrectQuestionListAnswers(GameQuizz);
+	cout << "\nQuiz Completed! Right Answers: " << GameQuizz.NumberOfRightAnswers << ", Wrong Answers: " << GameQuizz.NumberOfWrongAnswers << "\n";
+
+cout << (GameQuizz.isPass ? "You Passed the Quiz!\n" : "You Failed the Quiz!\n");
+	
 	
 }
 
