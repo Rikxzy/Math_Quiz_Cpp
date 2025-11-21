@@ -90,7 +90,7 @@ string GetOpTypeSymbol(enOpType OpType)
 		return "Mix";
 	}
 }
-int SimpleCalculator(short Number1,short Number2,enOpType OpType)
+int SimpleCalculator(int Number1,int Number2,enOpType OpType)
 {
 	switch(OpType)
 	{
@@ -231,50 +231,3 @@ int main()
 
 	StartGame();	
 }
-/* 
-* ff
-* f
-* 
-* 
-* 
-* void printQuizzQuestion(stQuizz& Quizz, short NumberOfQuestion)
-{
-	cout << "\n____________________________\n";
-	cout << "Question [" << NumberOfQuestion + 1 << "/" << Quizz.NumberOfQuestions << "] : ";
-	cout << Quizz.QuizzQuestion[NumberOfQuestion].Number1 << " ";
-	cout << GetOpTypeSymbol(Quizz.QuizzQuestion[NumberOfQuestion].OperationType)<<" ";
-	cout << Quizz.QuizzQuestion[NumberOfQuestion].Number2 << " = ";
-	cout << "\n____________________________\n"<<endl ;
-}
-* 
-
-void PrintGameResults(stGameResults GameResults){}
-
-
-void ResultsOfTest(stGameResults GameResults)
-{
-
-
-	if(GameResults.NumberOfRightAnswers >= GameResults.NumberOfWrongAnswers)
-		{
-		system("color 2F");
-		cout << "-----------------------------------------------\t\n";
-		cout << "Final Results is Pass \n";
-		cout << "You did Great :) \n";
-		cout << "-----------------------------------------------\t\n";
-	}
-	else if (GameResults.NumberOfRightAnswers < GameResults.NumberOfWrongAnswers)
-	{
-		system("color 4F");
-		cout << "-----------------------------------------------\t\n";
-		cout << "Final Results is Fail :_( \n";
-		cout << "We Wish You Better Results next time :) ";
-		cout << "-----------------------------------------------\t\n";
-	}
-}
-
-
-
-
-
-*/
